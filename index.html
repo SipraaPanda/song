@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="musiccontainer ">
+            <h2 id="title">Adhuri Kahani</h2>
+            <h2 id="artist">Arijit Singh</h2>
+            <div class="img_container">
+                <img src="song1.jpeg" alt="adhuri kahani">
+            </div>
+            <audio src="song1.mp3"></audio>
+
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1" >
+
+            <!-- controls -->
+            <div class="music_controls">
+                <img src="backward.svg" id="prev">
+                <img src="play.svg" id="play">
+                <img src="forward.svg" id="next">
+            </div>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+
+</html>

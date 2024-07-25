@@ -1,0 +1,93 @@
+ body{
+    background-color: black;
+    color: white;
+    align-items: baseline;
+ }
+.main{
+    padding-top: 62px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+     
+     
+}
+.musiccontainer{
+    background-color: rgb(246, 242, 242);
+       margin: 15px solid black;
+      padding: 30px;
+      box-shadow: 0px 0px 15px 15px   rgb(203, 204, 187);
+      border-radius: 35px;
+        
+}
+html{
+    font-size:16px;
+    font-family: sans-serif;
+}
+.musiccontainer  h2{
+     
+   background-color: #eeefec;
+   
+   box-shadow: 0px 0px 10px 2px rgb(178, 178, 211);
+   border-radius: 13px;
+   justify-content: center;
+   display: flex;
+     
+   text-shadow: 0px 0px 5px rgb(196, 193, 191);
+   color: rgb(7, 6, 6);
+    
+
+
+}
+ 
+.img_container {
+    background-color: rgb(200, 41, 41);
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 50%;
+    overflow: hidden; /*Ensures the image doesn't overflow*/
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+.img_container input{
+    color: red;
+}
+.music_controls{
+    background-color: rgb(172, 172, 172);
+    display: flex;
+   justify-content: center;
+   height: 67px;
+   padding-top: 10px;
+   border-radius: 14px;
+}
+.music_controls img:hover{
+    background-color: rgb(255, 255, 255);
+    
+}
+.anime {
+    animation: pulsate 2s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .musiccontainer {
+        background-color: rgb(0, 0, 0);
+    }
+     
+}
